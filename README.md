@@ -22,4 +22,4 @@ Here we look at how soil features relate to one another.
 ## 🤖 Model Performance
 ### Baseline: Logistic Regression
 The initial model reached 66% accuracy. The confusion matrix below highlights the linear overlaps.
-![Logistic Regression Confusion Matrix](logreg_cm.png)
+![Logistic Regression Confusion Matrix](conf_matrix.png)
