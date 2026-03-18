@@ -12,3 +12,15 @@ To help farmers optimize crop yields by predicting the best crop type based on s
 * **Python** (Pandas, NumPy)
 * **Scikit-Learn** (Logistic Regression, SVM, StandardScaler)
 * **Matplotlib & Seaborn** (Confusion Matrix Heatmaps)
+
+<table>
+  <tr>
+    <td><img src="correlation matrix.png" width="400"></td>
+    <td>
+      <b>Key Insights from Correlation:</b><br><br>
+      • <b>P & K Connection:</b> High correlation (0.74) suggests these nutrients often move together.<br>
+      • <b>pH Independence:</b> Low correlation shows pH provides a unique environmental signal.<br>
+      • <b>Model Impact:</b> These relationships explain why some "Problem Pairs" (like Rice and Jute) are harder for the model to separate.
+    </td>
+  </tr>
+</table>
