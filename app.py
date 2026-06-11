@@ -351,7 +351,7 @@ st.markdown("""
   <p class="hero-sub">AI-Powered Agriculture</p>
   <h1 class="hero-title">Sowing <span>Success</span></h1>
   <p class="hero-desc">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enter your soil nutrient profile and get an instant AI crop recommendation.
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enter your soil nutrient profile and get an instant AI crop recommendation.
   </p>
 </div>
 """, unsafe_allow_html=True)
