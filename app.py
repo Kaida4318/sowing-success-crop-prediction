@@ -351,8 +351,7 @@ st.markdown("""
   <p class="hero-sub">AI-Powered Agriculture</p>
   <h1 class="hero-title">Sowing <span>Success</span></h1>
   <p class="hero-desc">
-    Enter your soil's nutrient profile and receive an instant, 
-    AI-driven crop recommendation.
+    Enter your soil's nutrient profile and receive an instant, AI-driven crop recommendation.
   </p>
 </div>
 """, unsafe_allow_html=True)
@@ -381,7 +380,7 @@ st.markdown('</div>', unsafe_allow_html=True)
 if predict_clicked:
     input_df     = pd.DataFrame([[N, P, K, ph]], columns=["N", "P", "K", "ph"])
     scaled_input = scaler.transform(input_df)
-    prediction   = model.predict(scaled_input)[0]
+    prediction   = str(model.predict(scaled_input)[0])
 
     conf_html = ""
     if hasattr(model, "predict_proba"):
