@@ -352,13 +352,13 @@ st.markdown("""
   <h1 class="hero-title">Sowing <span>Success</span></h1>
   <p class="hero-desc">
     Enter your soil's nutrient profile and receive an instant, AI-driven crop recommendation.
+            
   </p>
 </div>
 """, unsafe_allow_html=True)
 
 
 # ── Input form ────────────────────────────────────────────────────────────────
-st.markdown('<div class="form-card"><div class="form-card-title">🧪 Soil Analysis Inputs</div>', unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
 with col1:
@@ -398,9 +398,19 @@ if predict_clicked:
     <div class="result-card">
       <p class="result-label">Recommended Crop</p>
       <p class="result-crop">{prediction.title()}</p>
-      {conf_html}
     </div>
     """, unsafe_allow_html=True)
+
+    if hasattr(model, "predict_proba"):
+        confidence = model.predict_proba(scaled_input).max() * 100
+        st.markdown(f"""
+        <p class="result-conf" style="text-align:center; color:#F5EDDA; opacity:0.8; margin-top:0.4rem;">
+          Confidence: <strong>{confidence:.1f}%</strong>
+        </p>
+        <div class="conf-bar-wrap">
+          <div class="conf-bar-fill" style="width:{confidence:.1f}%"></div>
+        </div>
+        """, unsafe_allow_html=True)
 
 
 # ── Model stats strip ─────────────────────────────────────────────────────────
