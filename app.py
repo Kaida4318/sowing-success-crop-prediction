@@ -128,10 +128,11 @@ div[data-testid="stTextInput"]  label {
     margin-bottom: 4px !important;
 }
 div[data-testid="stNumberInput"] input {
-    background: rgba(255,255,255,0.07) !important;
-    border: 1px solid rgba(255,255,255,0.18) !important;
+    background: rgba(255,255,255,0.85) !important;
+    border: 1px solid rgba(255,255,255,0.4) !important;
+    color: #1A3C2A !important;
     border-radius: 10px !important;
-    color: var(--parch) !important;
+    color: #1A3C2A  !important;
     font-size: 1rem !important;
     padding: 0.6rem 0.9rem !important;
     transition: border-color 0.2s, box-shadow 0.2s !important;
