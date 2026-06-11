@@ -85,7 +85,7 @@ st.markdown("""
     font-size: 0.95rem;
     color: var(--parch);
     opacity: 0.7;
-    max-width: 440px;
+    max-width: 560px;
     margin: 0 auto;
     line-height: 1.6;
 }
@@ -351,7 +351,7 @@ st.markdown("""
   <p class="hero-sub">AI-Powered Agriculture</p>
   <h1 class="hero-title">Sowing <span>Success</span></h1>
   <p class="hero-desc">
-    Enter your soil nutrient profile and get an instant AI crop recommendation.
+    &nbsp;&nbsp;&nbsp; Enter your soil nutrient profile and get an instant AI crop recommendation.
   </p>
 </div>
 """, unsafe_allow_html=True)
