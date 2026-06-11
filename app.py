@@ -85,7 +85,7 @@ st.markdown("""
     font-size: 0.95rem;
     color: var(--parch);
     opacity: 0.7;
-    max-width: 560px;
+    max-width: 440px;
     margin: 0 auto;
     line-height: 1.6;
 }
